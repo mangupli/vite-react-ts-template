@@ -1,42 +1,22 @@
-# Elbrus Bootcamp Vite bundle
+# Vite bundle template
 
 ## React + Typescript + ESLint + Prettier
 
-Современный быстрый сборщик React проекта на Typescript с предустановленными настройками ESLint и Prettier от Elbrus Bootcamp.
+A modern, fast React project builder in Typescript with ESLint and Prettier presets.
 
-## Использование
+## How to start
 
 ```
-npx degit Elbrus-Bootcamp/vite-react-ts my-app
+npx degit mangupli/vite-react-ts-template my-app
 
 cd my-app
 
 npm i
 ```
 
-## Скрипты
-
-- Запустить в режиме разработки
-
-```
-npm run dev
-```
-
-- Собрать проект
-
-```
-npm run build
-```
-
-- Превью
-
-```
-npm run preview
-```
-
 ## `settings.json`
 
-Чтобы настроить форматирование и линтование по сохранению, необходимо прописать в `settings.json` (ctrl + shift + P) следующие настройки:
+To customize formatting and linting on save, you need to write the following settings in `settings.json` (ctrl + shift + P):
 
 ```json
 {
@@ -48,7 +28,7 @@ npm run preview
 }
 ```
 
-Можно добавить форматирование Prettier для JS и React:
+You can add Prettier formatting for JS and React:
 
 ```json
 {
@@ -61,7 +41,7 @@ npm run preview
 }
 ```
 
-При работе не из корневой директории необходимо настроить CWD для ESLint:
+When working from a directory other than the root directory, you must configure CWD for ESLint:
 
 ```json
 {
@@ -72,4 +52,4 @@ npm run preview
 }
 ```
 
-Если директория не `client` или `server`, то можно добавить соответствующую строчку в данный массив.
+If the directory is not `client` or `server`, you can add the appropriate line to this array.
